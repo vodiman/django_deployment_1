@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+{% extends "basic_app/base.html" %}
+    {%  block body_block %}
+        <h1>Welcomd to index html</h1>
+        {% comment %} <h2>This is the index page showing.</h2> {% endcomment %}
+        <h1>{{ text|cut:"world" }}</h1>
+        <h1>{{ number|add:"99" }}</h1>
+    {%  endblock %}
